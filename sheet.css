@@ -1,0 +1,75 @@
+body {
+    background-color: #eee; font-family: sans-serif;
+}
+body p {
+    font-size: 16px; font-weight: 500;
+}
+h1{
+font-family: Amatic SC, sans-serif; text-align: center; letter-spacing: 1px;
+ font-size: 50px; padding: 5px;
+}
+#container{
+    width: 50%;  padding: 20px 10px;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    box-shadow: -1px 0px 24px -3px grey;
+}
+.searchBox {
+    display: flex;  width: fit-content;
+    border: 2px solid #ffc107; 
+    margin: 20px; 
+}
+.searchBox input {
+    width: 430px; border: none;
+}
+#recipeCards{
+    display: grid; grid-template-columns: repeat(4,1fr);
+    padding: 30px 0px;
+}
+#recipeCards .card {
+    margin: 10px;
+}
+#recipeCards .card .btn {
+    width: 100%; 
+}
+.imgContainer{
+    width: 300px; margin: 10px 34%;
+    border: black 5px solid;
+}
+.imgContainer , .imgContainer img {
+    border-radius: 30px;
+}
+.infoContainer p {
+    line-height: 30px; font-weight: 500;
+}
+.infoContainer h4{
+    font-size: 25px; font-weight: 530;
+}
+.tags  .btn {
+    margin: 10px 15px 10px 0px;
+    width: 200px; padding: 10px;
+}
+@media (max-width: 576px){
+    #container{
+        width: 97%; padding: 20px 0px;
+    }
+    .searchBox input {
+        width: 240px;
+    }
+    #recipeCards{
+        display: grid; grid-template-columns: repeat(1,1fr);
+        padding: 10px 10px;
+    }
+    #recipeCards .card {
+        margin: 10px 34px; width: 14rem; 
+    }
+    .imgContainer{
+        width: 250px; margin: 15px 13%;
+    }
+    .infoContainer h4{
+        font-size: 25px; font-weight: 530;
+    }
+    .tags .btn {
+        margin: 10px 0px 20px 0px;
+        width: 150px; padding: 10px;
+    }
+}
